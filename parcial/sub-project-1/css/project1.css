@@ -1,0 +1,36 @@
+#cursor {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(165, 42, 42, 0.722);
+  overflow: hidden;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 0 solid rgba(56, 11, 160, 0.693);
+  animation-name: wave;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+#cursor::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.433);
+  border-radius: 100%;
+  animation-name: wave;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+/*# sourceMappingURL=project1.css.map */
